@@ -1,0 +1,445 @@
+[
+    {
+      "category": "cafes",
+      "categoryTitle": "Espresso Bar",
+      "items": [
+        {
+          "id": "cafe001",
+          "title": "Espresso simple",
+          "description": "Shot de café de grano de la casa, 30 ml.",
+          "price": "$1.600",
+          "image": "src/products/cafes/espresso_bar/espresso.png"
+        },
+        {
+          "id": "cafe002",
+          "title": "Doppio",
+          "description": "Shot doble de café.",
+          "price": "$2.200",
+          "image": "src/products/cafes/espresso_bar/doppio.png"
+        },
+        {
+          "id": "cafe003",
+          "title": "Lungo",
+          "description": "Shot doble de café con agua caliente.",
+          "price": "$2.200",
+          "image": "src/products/cafes/espresso_bar/lungo.png"
+        },
+        {
+          "id": "cafe004",
+          "title": "Con panna",
+          "description": "Shot doble de café cubierto con crema batida.",
+          "price": "$2.600",
+          "image": "src/products/cafes/espresso_bar/panna.png"
+        },
+        {
+          "id": "cafe005",
+          "title": "Americano",
+          "description": "Shot de café con agua de la casa, 230 ml.",
+          "price": "$2.200",
+          "image": "src/products/cafes/espresso_bar/americano.jpg"
+        },
+        {
+          "id": "cafe006",
+          "title": "Affogato",
+          "description": "Helado de vainilla con un shot de espresso de la casa, 170 ml.",
+          "price": "$3.500",
+          "image": "src/products/cafes/espresso_bar/affogato.jpg"
+        },
+        {
+          "id": "cafe007",
+          "title": "Café filtrado",
+          "description": "Café filtrado en prensa francesa, cuerpo medio y sabores detallados.",
+          "price": "$2.800",
+          "image": "src/products/cafes/espresso_bar/filtrado.png"
+        }
+      ]
+    },
+    {
+      "category": "cafes",
+      "categoryTitle": "Espresso + Leche",
+      "items": [
+         {
+          "id": "cafe008",
+          "title": "Flat White",
+          "description": "Café de grano con doble shot y leche al vapor, 170 ml.",
+          "price": "$2.700",
+          "image": "src/products/cafes/espresso_mas_leche/flat_white.jpg"
+        },
+        {
+          "id": "cafe009",
+          "title": "Capuccino",
+          "description": "Capuccino con shot de café y leche al vapor de la casa, 230 ml.",
+          "price": "$2.800",
+          "image": "src/products/cafes/espresso_mas_leche/capuccino.jpg"
+        },
+        {
+          "id": "cafe010",
+          "title": "Macchiato",
+          "description": "Doppio cubierto con espuma de leche.",
+          "price": "$2.400",
+          "image": "src/products/cafes/espresso_mas_leche/macchiato.png"
+        }
+      ]
+    },
+     {
+      "category": "cafes",
+      "categoryTitle": "Lattes",
+      "items": [
+         {
+          "id": "cafe011",
+          "title": "Latte",
+          "description": "Shot doble o simple de espresso con leche texturizada.",
+          "price": "$2.600 / $3.100",
+          "image": "src/products/cafes/lattes/latte.webp"
+         },
+         {
+          "id": "cafe012",
+          "title": "Latte caramel macchiato",
+          "description": "Shot doble o simple de espresso con leche texturizada y caramelo.",
+          "price": "$2.900 / $3.400",
+          "image": "src/products/cafes/lattes/latte_caramel.webp"
+         },
+         {
+          "id": "cafe013",
+          "title": "Latte mocaccino",
+          "description": "Shot doble o simple de espresso con leche texturizada y chocolate.",
+          "price": "$2.900 / $3.400",
+          "image": "src/products/cafes/lattes/latte_mocaccino.webp"
+         },
+         {
+          "id": "cafe014",
+          "title": "Latte vainilla",
+          "description": "Shot doble o simple de espresso con leche texturizada y vainilla.",
+          "price": "$2.900 / $3.400",
+          "image": "src/products/cafes/lattes/latte_vainilla.webp"
+         },
+         {
+          "id": "cafe015",
+          "title": "Latte matcha",
+          "description": "Té de matcha con leche texturizada",
+          "price": "$3.100 / $3.600",
+          "image": "src/products/cafes/lattes/latte_matcha.png"
+         }
+      ]
+    },
+    {
+      "category": "cold",
+      "categoryTitle": "Frios",
+      "items": [
+         {
+          "id": "iced001",
+          "title": "Iced Capuccino Latte",
+          "description": "Doble shot de café con leche y hielo (500cc).",
+          "price": "$3.500",
+          "image": "src/products/cold/iced/iced_capuccino.webp"
+         },
+         {
+          "id": "iced002",
+          "title": "Iced Caramelo Latte",
+          "description": "Doble shot de café con leche, syrup de caramelo y hielo (500cc).",
+          "price": "$3.700",
+          "image": "src/products/cold/iced/iced_caramelo.webp"
+         },
+          {
+          "id": "iced003",
+          "title": "Iced Mocaccino Latte",
+          "description": "Doble shot de café con leche, chocolate y hielo (500cc).",
+          "price": "$3.700",
+          "image": "src/products/cold/iced/iced_mocaccino.webp"
+         },
+          {
+          "id": "iced004",
+          "title": "Iced Espresso Tonic",
+          "description": "Doble shot de café diluido en agua tónica, hielo y un trocito de limón (500cc).",
+          "price": "$3.600",
+          "image": "src/products/cold/iced/iced_tonic_espresso.webp"
+         },
+          {
+          "id": "iced005",
+          "title": "Iced Vainilla Latte",
+          "description": "Doble shot de café con leche, syrup de vainilla y hielo (500cc).",
+          "price": "$3.800",
+          "image": "src/products/cold/iced/iced_vanilla.webp"
+         },
+          {
+          "id": "iced006",
+          "title": "Iced Matcha Latte",
+          "description": "Té de matcha con leche y hielo (500cc).",
+          "price": "$3.900",
+          "image": "src/products/cold/iced/iced_matcha.webp"
+         },
+          {
+          "id": "iced007",
+          "title": "Iced Americano",
+          "description": "Doble shot de café diluido en agua purificada y hielo (500cc).",
+          "price": "$2.600",
+          "image": "src/products/cold/iced/iced_americano.webp"
+         },
+         {
+          "id": "iced008",
+          "title": "Iced Orange Espresso",
+          "description": "Doble shot de café diluido en jugo de naranja, agua tónica, hielo y un trocito de naranja (500cc).",
+          "price": "$3.800",
+          "image": "src/products/cold/iced/iced_orange.webp"
+         },
+         {
+          "id": "iced009",
+          "title": "Cold Brew",
+          "description": "Café preparado en frio en prensa francesa por 16 horas.",
+          "price": "$3.600",
+          "image": "src/products/cold/iced/cold_brew.png"
+         }
+      ]
+    },
+    {
+      "category": "frappe",
+      "categoryTitle": "Frappés + Café",
+      "items": [
+         {
+          "id": "frappe001",
+          "title": "Frappuccino",
+          "description": "Frappé con café, hielo, leche y crema batida de la casa (500cc).",
+          "price": "$3.800",
+          "image": "src/products/frappe/frapuccino.png"
+         },
+         {
+          "id": "frappe003",
+          "title": "Frappé Caramel Macchiato",
+          "description": "Frappé con café, hielo, caramelo, leche, crema batida y salsa de caramelo de la casa (500cc).",
+          "price": "$4.200",
+          "image": "src/products/frappe/frappe_caramel.png"
+         },
+         {
+          "id": "frappe006",
+          "title": "Frappé Mocaccino",
+          "description": "Doble shot de café, chocolate, leche y hielo, cubierto con crema batida y salsa de chocolate (500cc).",
+          "price": "$4.300",
+          "image": "src/products/frappe/frappe_mocaccino.png"
+         },
+         {
+          "id": "frappe007",
+          "title": "Frappuccino Manjar",
+          "description": "Frappé con café, hielo, leche, crema batida y salsa de manjar de la casa (500cc).",
+          "price": "$4.300",
+          "image": "src/products/frappe/frapuccino_manjar.png"
+         }
+      ]
+    },
+    {
+      "category": "frappe",
+      "categoryTitle": "Frappés",
+      "items": [
+         {
+          "id": "frappe002",
+          "title": "Frappé Banana Milk",
+          "description": "Frappé con banana, hielo, leche, crema batida y salsa de manjar de la casa (500cc).",
+          "price": "$3.600",
+          "image": "src/products/frappe/banana_milk.png"
+         },
+         {
+          "id": "frappe004",
+          "title": "Frappé Matcha",
+          "description": "Té de matcha con leche y hielo granizado, cubierto con crema batida (500cc).",
+          "price": "$4.200",
+          "image": "src/products/frappe/frappe_matcha.png"
+         },
+         {
+          "id": "frappe005",
+          "title": "Frappé Chocolate Oreo",
+          "description": "Frappé con galletas oreo, chocolate, hielo, leche, crema batida y salsa de chocolate de la casa (500cc).",
+          "price": "$4.000",
+          "image": "src/products/frappe/frappe_oreo.png"
+         },
+         {
+          "id": "frappe007",
+          "title": "Frappé Frutos Rojos",
+          "description": "Frappé con frutillas naturales, leche, crema batida y salsa de frambuesa de la casa (500cc).",
+          "price": "$4.200",
+          "image": "src/products/frappe/frappe_frutilla.png"
+         }
+      ]
+    },
+    {
+      "category": "infusiones",
+      "categoryTitle": "Té",
+      "items": [
+         {
+          "id": "te001",
+          "title": "Té Negro",
+          "description": "Té negro aprox 2 porciones de 250ml c/u.",
+          "price": "$2.800",
+          "image": "src/products/infusiones/te/te_negro.jpg"
+         },
+         {
+          "id": "te002",
+          "title": "Té Verde",
+          "description": "Té verde aprox 2 porciones de 250ml c/u.",
+          "price": "$2.800",
+          "image": "src/products/infusiones/te/te_verde.png"
+         },
+         {
+          "id": "te003",
+          "title": "Té Blanco",
+          "description": "Té blanco aprox 2 porciones de 250ml c/u.",
+          "price": "$2.800",
+          "image": "src/products/infusiones/te/te_blanco.png"
+         }
+      ]
+    },
+    {
+      "category": "bolleria",
+      "categoryTitle": "Bolleria",
+      "items": [
+         {
+          "id": "bolleria004",
+          "title": "Medialuna",
+          "description": "Masa de hojaldre y mantequilla, horneada hasta dorar, en forma de media luna. 1pza.",
+          "price": "$1.300",
+          "image": "src/products/bolleria/media_luna.png"
+         },
+         {
+          "id": "bolleria005",
+          "title": "Medialuna Nutella",
+          "description": "Masa de hojaldre y mantequilla, horneada hasta dorar con nutella, en forma de media luna. 1pza.",
+          "price": "$1.800",
+          "image": "src/products/bolleria/media_luna.png"
+         },
+         {
+          "id": "bolleria006",
+          "title": "Medialuna Manjar",
+          "description": "Masa de hojaldre y mantequilla, horneada hasta dorar con manjar, en forma de media luna. 1pza.",
+          "price": "$1.800",
+          "image": "src/products/bolleria/media_luna_manjar.png"
+         },
+         {
+          "id": "bolleria005",
+          "title": "Rollo Canela",
+          "description": "Masa de hojaldre y mantequilla, horneada hasta dorar, en forma de media luna. 1pza.",
+          "price": "$1.300",
+          "image": "src/products/bolleria/media_luna.png"
+         }
+      ]
+    },
+    {
+      "category": "bolleria",
+      "categoryTitle": "Salados",
+      "items": [
+         {
+          "id": "bolleria001",
+          "title": "Bolleria",
+          "description": "Bolleria",
+          "price": "$2.800",
+          "image": "src/products/bolleria/bolleria.png"
+         }
+      ]
+    },
+    {
+      "category": "bebidas_frias",
+      "categoryTitle": "Gaseosas",
+      "items": [
+         {
+          "id": "bebida001",
+          "title": "Coca-Cola",
+          "description": "Coca-Cola Original 350ml.",
+          "price": "$1.300",
+          "image": "src/products/gaseosas/coca_cola.png"
+         },
+         {
+          "id": "bebida002",
+          "title": "Fanta",
+          "description": "Fanta Original 350ml.",
+          "price": "$1.300",
+          "image": "src/products/gaseosas/fanta.png"
+         },
+         {
+          "id": "bebida003",
+          "title": "Sprite",
+          "description": "Sprite Original 350ml.",
+          "price": "$1.300",
+          "image": "src/products/gaseosas/sprite.png"
+         },
+         {
+          "id": "bebida004",
+          "title": "Coca-Cola Zero",
+          "description": "Coca-Cola Zero 350ml.",
+          "price": "$1.300",
+          "image": "src/products/gaseosas/coca_cola_zero.png"
+         }
+      ]
+    },
+
+    {
+      "category": "bebidas_frias",
+      "categoryTitle": "Energeticas",
+      "items": [
+         {
+          "id": "bebida004",
+          "title": "Monster Energy Regular",
+          "description": "Monster Energy Regular 473ml.",
+          "price": "$2.000",
+          "image": "src/products/energeticas/monster_energy.png"
+         },
+         {
+          "id": "bebida005",
+          "title": "Monster Energy Ultra Zero",
+          "description": "Monster Energy Ultra Zero 473ml.",
+          "price": "$2.000",
+          "image": "src/products/energeticas/monster_energy_ultra_zero.png"
+         },
+         {
+          "id": "bebida006",
+          "title": "Monster Energy Ripper",
+          "description": "Monster Energy Ripper 473ml.",
+          "price": "$2.000",
+          "image": "src/products/energeticas/monster_energy_ripper.png"
+         }
+      ]
+    },
+    {
+      "category": "bebidas_frias",
+      "categoryTitle": "Jugos",
+      "items": [
+         {
+          "id": "bebida007",
+          "title": "Jumex Piña",
+          "description": "Jumex Piña 335ml.",
+          "price": "$1.300",
+          "image": "src/products/jugos/jumex_pina.png"
+         }
+      ]
+    },
+    {
+      "category": "bebidas_frias",
+      "categoryTitle": "Aguas",
+      "items": [
+         {
+          "id": "bebida009",
+          "title": "Agua Benedictino Con Gas",
+          "description": "Agua Benedictino Con Gas 500ml.",
+          "price": "$1.000",
+          "image": "src/products/aguas/benedictino.png"
+         },
+         {
+          "id": "bebida010",
+          "title": "Agua Benedictino Sin Gas",
+          "description": "Agua Benedictino Sin Gas 500ml.",
+          "price": "$1.000",
+          "image": "src/products/aguas/benedictino_sin_gas.png"
+         },
+         {
+          "id": "bebida011",
+          "title": "Agua Tónica Regular",
+          "description": "Agua Tónica Regular 310ml.",
+          "price": "$1.300",
+          "image": "src/products/aguas/agua_tonica.png"
+         },
+         {
+          "id": "bebida012",
+          "title": "Agua Tónica Pink",
+          "description": "Agua Tónica Pink 310ml.",
+          "price": "$1.300",
+          "image": "src/products/aguas/agua_tonica_pink.png"
+         }
+      ]
+    }
+  ]

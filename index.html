@@ -1,1 +1,107 @@
-<p>picocoin</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownchip Coffee - Menú</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/e69db67fb4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="brand-column">
+                <div class="logo-container">
+                    <img src="src/logo.jpg" alt="Logo Brownchip Coffee" class="logo" loading="lazy">
+                </div>
+                <h1>Brownchip Coffee</h1>
+                <a href="#" class="view-more" aria-expanded="false" aria-controls="mobileContactInfo">Ver más</a>
+            </div>
+
+            <div class="header-info">
+                <ul class="header-contact">
+                    <li><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=TU+DIRECCION+AQUI"> <i class="fa-solid fa-map-location-dot icon-color-default" aria-hidden="true"></i> Nuestra dirección!</a></li>
+                    <li><a href="tel:+56948923239"><i class="fa-solid fa-mobile-screen icon-color-default" aria-hidden="true"></i> Llámanos!</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=56948923239&text=Hola%2C%20me%20gustar%C3%ADa%20ordenar%20algo%20rico!" target="_blank"><i class="fa-brands fa-whatsapp icon-color-whatsapp" aria-hidden="true"></i> Whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/brownchip_coffee/" target="_blank"><i class="fa-brands fa-instagram icon-color-instagram" aria-hidden="true"></i> Instagram</a></li>
+                </ul>
+
+                <div class="header-hours">
+                    <p><strong>Lunes a Viernes 16:00 a 22:00</strong></p>
+                    <p><strong>Sábados y Domingos 9:00 a 22:00</strong></p>
+                    <p class="contact-info-about"><strong>Encuéntranos también en</strong></p>
+                    <div class="contact-info-images">
+                        <a href="https://www.ubereats.com/cl/store/brownchip-coffee/mpvLjGR_WYqSNiLQ4FA1sQ"><img width="45" height="45" src="https://cdn.brandfetch.io/ubereats.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Uber Eats" loading="lazy"/></a>
+                        <a href="URL_PEDIDOS_YA" target="_blank"><img src="src/icons/pedidos.png" alt="Pedidos Ya" width="45" height="45" loading="lazy"></a>
+                        <a href="https://www.rappi.cl/restaurantes/900102925-brownchip-coffee" target="_blank"><img src="https://www.wyw.cl/cdn/shop/files/rappi_envios_2048x2048.jpg?v=1722540500" alt="Rappi" width="45" height="45" loading="lazy"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-contact-info" id="mobileContactInfo">
+                <p class="mobile-contact-info-hours"><strong>Lunes a Viernes 16:00 a 22:00</strong></p>
+                <p class="mobile-contact-info-hours"><strong>Sábados y Domingos 9:00 a 22:00</strong></p>
+                <hr class="mobile-divider">
+                 <ul class="mobile-contact-links">
+                    <li><a target="_blank" href="https://www.google.com/maps/search/?api=1&query=TU+DIRECCION+AQUI"><i class="fa-solid fa-map-location-dot icon-color-default" aria-hidden="true"></i> Nuestra dirección!</a></li>
+                    <li><a href="tel:+56948923239"><i class="fa-solid fa-mobile-screen icon-color-default" aria-hidden="true"></i> Llámanos!</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=56948923239&text=Hola%2C%20me%20gustar%C3%ADa%20ordenar%20algo%20rico!" target="_blank"><i class="fa-brands fa-whatsapp icon-color-whatsapp" aria-hidden="true"></i> Whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/brownchip_coffee/" target="_blank"><i class="fa-brands fa-instagram icon-color-instagram" aria-hidden="true"></i> Instagram</a></li>
+                 </ul>
+                 <hr class="mobile-divider">
+                <p class="mobile-contact-info-about"><strong>Encuéntranos también en</strong></p>
+                 <div class="mobile-contact-info-images">
+                     <a href="https://www.ubereats.com/cl/store/brownchip-coffee/mpvLjGR_WYqSNiLQ4FA1sQ" target="_blank"><img width="45" height="45" src="https://cdn.brandfetch.io/ubereats.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Uber Eats" loading="lazy"/></a>
+                     <a href="URL_PEDIDOS_YA" target="_blank"><img src="src/icons/pedidos.png" alt="Pedidos Ya" width="45" height="45" loading="lazy"></a>
+                     <a href="https://www.rappi.cl/restaurantes/900102925-brownchip-coffee" target="_blank"><img src="https://www.wyw.cl/cdn/shop/files/rappi_envios_2048x2048.jpg?v=1722540500" alt="Rappi" width="45" height="45" loading="lazy"></a>
+                 </div>
+            </div>
+        </header>
+
+        <nav class="sticky-nav">
+            <div class="search-container">
+                <input type="search" id="searchInput" placeholder="Buscar producto..." aria-label="Buscar producto">
+                <div class="category-tabs" role="tablist" aria-label="Categorías de menú">
+                    <button class="tab-button active" data-category="all" role="tab" aria-selected="true" aria-controls="menu-panel-all" id="tab-all">Todos</button>
+                    <button class="tab-button" data-category="cafes" role="tab" aria-selected="false" aria-controls="menu-panel-cafes" id="tab-cafes">Cafés</button>
+                    <button class="tab-button" data-category="cold" role="tab" aria-selected="false" aria-controls="menu-panel-cold" id="tab-cold">Frios</button>
+                    <button class="tab-button" data-category="frappe" role="tab" aria-selected="false" aria-controls="menu-panel-frappe" id="tab-frappe">Frappés</button>
+                    <button class="tab-button" data-category="infusiones" role="tab" aria-selected="false" aria-controls="menu-panel-te" id="tab-te">Infusiones</button>
+                    <button class="tab-button" data-category="bolleria" role="tab" aria-selected="false" aria-controls="menu-panel-bolleria" id="tab-bolleria">Sandwiches</button>
+                    <button class="tab-button" data-category="bolleria" role="tab" aria-selected="false" aria-controls="menu-panel-bolleria" id="tab-bolleria">Bollería</button>
+                    <button class="tab-button" data-category="desayuno" role="tab" aria-selected="false" aria-controls="menu-panel-desayuno" id="tab-desayuno">Desayunos</button>
+                    <button class="tab-button" data-category="bebidas" role="tab" aria-selected="false" aria-controls="menu-panel-bebidas" id="tab-bebidas">Bebidas</button>
+                    </div>
+            </div>
+        </nav>
+
+        <main id="menu-container">
+            <div class="loading-indicator">Cargando menú...</div>
+        </main>
+
+        <footer>
+            <p>© <span id="current-year">2025</span> Brownchip Coffee</p>
+        </footer>
+    </div>
+
+    <div id="imageModal" class="image-modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+        <button class="close-modal" aria-label="Cerrar modal">×</button>
+        <div class="modal-content">
+            <div class="modal-image-container">
+                <img id="modalImage" class="modal-image" src="" alt="">
+            </div>
+            <div class="modal-details"> <!-- Modal Details -->
+                <h3 id="modalTitle" class="modal-title"></h3>
+                <p id="modalDescription" class="modal-description"></p>
+                <span id="modalPrice" class="modal-price"></span>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="backToTopBtn" class="back-to-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <script src="script.js"></script>
+    </body>
+    </html>

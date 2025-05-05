@@ -1,0 +1,349 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header (sin cambios) --- */
+.main-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; background-color: #fff; padding: 20px 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex-wrap: wrap; }
+.brand-column { display: flex; align-items: center; gap: 15px; }
+.logo-container { width: 60px; height: 60px; border-radius: 50%; overflow: hidden; border: 2px solid #5c3a21; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo { max-width: 80%; max-height: 80%; object-fit: contain; }
+.main-header h1 { font-size: 1.8rem; color: #333; margin-right: auto; white-space: nowrap; }
+.header-info { display: flex; gap: 40px; flex-wrap: wrap; margin-left: auto; }
+.header-contact, .mobile-contact-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px; }
+.header-contact li, .mobile-contact-links li { line-height: 1.4; }
+.header-contact a, .mobile-contact-info a { text-decoration: none; color: #333; transition: color 0.3s ease; display: inline-flex; align-items: center; gap: 8px; }
+.header-contact a:hover, .mobile-contact-info a:hover { color: #5c3a21; }
+.icon-color-default { color: #000000; }
+.icon-color-whatsapp { color: #25D366; }
+.icon-color-instagram { color: #E4405F; }
+.header-hours { display: flex; flex-direction: column; }
+.header-hours p strong { font-weight: bold; }
+.contact-info-about { font-weight: bold; margin-top: 10px; }
+.contact-info-images { display: flex; gap: 10px; margin-top: 5px; }
+.contact-info-images img { width: 45px; height: 45px; border-radius: 20%; object-fit: cover; transition: transform 0.3s ease-out; }
+.contact-info-images img:hover { transform: scale(1.1); }
+.view-more { display: none; padding: 5px 10px; color: #5c3a21; background: none; text-decoration: none; font-size: 0.9rem; font-weight: bold; margin-left: 15px; white-space: nowrap; cursor: pointer; }
+.mobile-contact-info { width: 100%; max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, margin-top 0.5s ease-in-out, border-top 0.5s ease-in-out; padding: 0 15px; border-top: 1px solid transparent; margin-top: 0; text-align: center; }
+.mobile-contact-info.visible { max-height: 600px; padding: 15px; border-top: 1px solid #eee; margin-top: 15px; }
+.mobile-contact-info a { display: flex; justify-content: center; margin-bottom: 10px; color: #5c3a21; }
+.mobile-contact-links { flex-direction: column; align-items: center; gap: 10px; margin: 15px 0; }
+.mobile-contact-info-hours, .mobile-contact-info-about { text-align: center; margin-bottom: 8px; }
+.mobile-contact-info-hours strong, .mobile-contact-info-about strong { font-weight: bold; }
+.mobile-divider { border: none; height: 1px; background-color: #eee; margin: 15px 0; }
+.mobile-contact-info-images { display: flex; justify-content: center; gap: 15px; margin-top: 10px; }
+.mobile-contact-info-images img { width: 45px; height: 45px; border-radius: 20%; object-fit: cover; transition: transform 0.3s ease-out; }
+.mobile-contact-info-images img:hover { transform: scale(1.1); }
+
+/* --- Sticky Nav (sin cambios) --- */
+.sticky-nav { position: sticky; top: 0; background-color: #5c3a21; border-radius: 10px; padding: 15px 20px; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
+.search-container { max-width: 1200px; margin: 0 auto; }
+#searchInput { width: 100%; padding: 10px 15px; border: none; border-radius: 30px; font-size: 1rem; margin-bottom: 15px; }
+#searchInput:focus { outline: none; box-shadow: 0 0 5px rgba(212, 167, 98, 0.5); }
+.category-tabs { display: flex; overflow-x: auto; padding-bottom: 10px; gap: 10px; scrollbar-width: none; -ms-overflow-style: none; }
+.category-tabs::-webkit-scrollbar { display: none; }
+.tab-button { padding: 8px 15px; background-color: #f0f0f0; border: none; border-radius: 20px; cursor: pointer; white-space: nowrap; font-weight: bold; color: #5c3a21; font-size: 0.9rem; transition: background-color 0.3s ease, color 0.3s ease; flex-shrink: 0; }
+.tab-button.active, .tab-button[aria-selected="true"] { background-color: #d4a762; color: white; }
+.tab-button:hover:not(.active):not([aria-selected="true"]) { background-color: #e0e0e0; }
+
+/* --- Main Content Area (Menu) --- */
+#menu-container { padding: 0; }
+.loading-indicator, .no-results-message { text-align: center; padding: 40px; font-size: 1.2rem; color: #5c3a21; font-style: italic; }
+.no-results-message { color: #666; font-size: 1.1rem; font-style: normal; }
+
+/* --- Estilos Base para Sección y Título --- */
+.menu-section {
+    background-color: #f5f5f5; /* Cambiado a fondo gris claro para que las tarjetas resalten */
+    border-radius: 10px;
+    margin-bottom: 30px;
+    /* Quitamos sombra de la sección, la tendrán las tarjetas */
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
+    padding: 20px 25px; /* Padding general */
+}
+.menu-category-title {
+    color: #333; /* Color más oscuro para título */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.6rem; /* Más grande */
+    margin-bottom: 25px;
+    font-weight: 700; /* Más bold */
+    padding: 0;
+    border-bottom: 2px solid #5c3a21; /* Línea inferior decorativa */
+    padding-bottom: 10px; /* Espacio para la línea */
+    /* Ocupa todo el ancho por defecto (block) */
+}
+
+/* Estilo base para item (Aplicará a Móvil por defecto) */
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alineación vertical */
+    gap: 15px; /* Espacio imagen-texto */
+    padding: 15px 0; /* Padding vertical */
+    border-bottom: 1px solid #eee; /* Separador móvil */
+    background-color: #fff; /* Fondo blanco por defecto */
+     padding: 15px; /* Padding interno */
+     border-radius: 8px; /* Redondeo */
+     margin-bottom: 15px; /* Espacio debajo */
+     box-shadow: 0 1px 4px rgba(0,0,0,0.08); /* Sombra suave */
+}
+.menu-section > .menu-item:last-child {
+    border-bottom: none; /* Quitar borde del último */
+     margin-bottom: 0; /* Quitar margen inferior del último */
+}
+
+.menu-item-image-placeholder {
+    width: 100px;  /* Ancho móvil */
+    height: 100px; /* Alto móvil */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.menu-item-image-placeholder:hover {
+    transform: scale(1.03);
+}
+.menu-item-image-placeholder img {
+    width: 100%; height: 100%; object-fit: cover; background-color: #ffffff;
+}
+.menu-item-image-placeholder.no-image { background-color: #e0e0e0; cursor: default; }
+.menu-item-image-placeholder.no-image:hover { transform: none; }
+
+.menu-item-content {
+    flex-grow: 1; display: flex; flex-direction: column;
+    align-items: flex-start; text-align: left;
+}
+.menu-item-title {
+    font-size: 1rem; /* Tamaño móvil ajustado */
+    font-weight: 600; color: #333; margin-bottom: 4px;
+}
+.menu-item-description {
+    color: #666; font-size: 0.85rem; /* Tamaño móvil ajustado */
+    font-style: normal; /* Sin cursiva */
+    margin-bottom: 8px; white-space: normal; overflow-wrap: break-word;
+    line-height: 1.4;
+}
+.menu-item-price {
+    font-weight: bold; color: #5c3a21; /* Color precio */
+    font-size: 1rem; /* Tamaño móvil ajustado */
+    white-space: nowrap; margin-top: auto; padding-top: 5px;
+}
+
+footer { text-align: center; margin-top: 40px; padding: 20px 0; border-top: 1px solid #ddd; color: #666; }
+
+/* --- Modal (sin cambios) --- */
+.image-modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); overflow: auto; animation: fadeIn 0.3s; align-items: center; justify-content: center; }
+.image-modal[aria-hidden="true"] { display: none; }
+.image-modal[aria-hidden="false"] { display: flex; }
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+.modal-content { display: flex; flex-direction: column; background-color: #fefefe; margin: auto; padding: 0; max-width: 600px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); animation: slideIn 0.3s; border-radius: 8px; max-height: 80vh; overflow: hidden; }
+@keyframes slideIn { from {transform: translateY(-50px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
+.modal-image-container { width: 100%; max-height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #ffffff; }
+.modal-image { display: block; max-width: 100%; max-height: 100%; object-fit: contain; height: 400px; }
+.modal-details { padding: 20px; background-color: white; overflow-y: auto; max-height: calc(80vh - 50vh - 40px); }
+.modal-title { color: #5c3a21; font-size: 1.5rem; margin-bottom: 10px; }
+.modal-description { color: #666; margin-bottom: 15px; font-size: 1rem; }
+.modal-price { font-weight: bold; color: #5c3a21; font-size: 1.2rem; display: block; margin-top: 10px; } /* Precio en rojo */
+.close-modal { position: absolute; top: 15px; right: 20px; color: white; background-color: rgba(0, 0, 0, 0.5); border: none; border-radius: 50%; width: 35px; height: 35px; font-size: 25px; font-weight: bold; line-height: 35px; text-align: center; cursor: pointer; transition: background-color 0.3s, color 0.3s; z-index: 2001; }
+.close-modal:hover { background-color: rgba(212, 167, 98, 0.8); color: white; }
+
+/* ====================================================== */
+/* === ESTILOS PARA ESCRITORIO (GRID + IMG/TEXT LADO A LADO) === */
+/* ====================================================== */
+@media (min-width: 769px) {
+
+    /* Ocultar elementos móviles */
+    .mobile-contact-info { display: none !important; } /* Forzar ocultación total */
+    .view-more { display: none !important; }
+
+    /* Contenedor principal de los items (hijos de .menu-section) */
+    /* Necesitamos un wrapper para aplicar grid si el título está al mismo nivel */
+    /* Asumiremos que el JS crea section > div.menu-category > (h3, item, item...) */
+    .menu-category { /* Este div contendrá el título y los items */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+        gap: 20px; /* Espacio entre columnas y filas */
+        padding: 0; /* Sin padding extra aquí */
+        border: none; /* Sin borde extra aquí */
+    }
+    /* Estilos de la sección contenedora */
+     .menu-section {
+         padding: 20px 25px; /* Mantenemos padding general */
+         background-color: #f5f5f5; /* Fondo gris claro */
+         box-shadow: none; /* Sin sombra en la sección */
+     }
+
+    /* Título ocupa todas las columnas */
+    .menu-category-title {
+        grid-column: 1 / -1; /* Ocupa todo el ancho de la grid */
+        padding: 0 0 10px 0; /* Padding abajo para línea */
+        margin-bottom: 25px; /* Espacio antes de las tarjetas */
+        font-size: 1.6rem; /* Tamaño desktop */
+        border-bottom: 2px solid #5c3a21; /* Línea inferior */
+        text-decoration: none; /* Sin subrayado */
+        color: #333;
+        font-weight: 700;
+    }
+
+    /* Estilo de TARJETA para cada item en desktop */
+    .menu-item {
+        display: flex;          /* Imagen y texto lado a lado */
+        flex-direction: row;    /* Dirección fila */
+        align-items: center;    /* Alinear verticalmente */
+        gap: 15px;              /* Espacio imagen-texto */
+        padding: 15px;          /* Padding INTERNO de la tarjeta */
+        border: none;           /* Sin borde inferior separador */
+        border-radius: 8px;     /* Redondeo */
+        background-color: #fff; /* Fondo blanco tarjeta */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra tarjeta */
+        width: auto;            /* Grid controla el ancho */
+        margin-bottom: 0;       /* Sin margen inferior (gap se encarga) */
+        /* height: 140px; */    /* Opcional: Altura fija para alinear filas */
+    }
+     /* Quitar borde del último (no aplica si ya no hay) */
+     .menu-section > .menu-category > .menu-item:last-child { border-bottom: none; }
+
+
+    /* Imagen dentro de la tarjeta desktop */
+    .menu-item-image-placeholder {
+        display: flex;          /* Aseguramos visibilidad */
+        width: 100px;           /* Ancho fijo imagen */
+        height: 100px;          /* Alto fijo imagen */
+        flex-shrink: 0;         /* No encoger */
+        margin: 0;              /* Resetear margen */
+        border-radius: 6px;     /* Redondeo imagen */
+    }
+
+    /* Contenido de texto dentro de la tarjeta desktop */
+    .menu-item-content {
+        flex-grow: 1;           /* Ocupa espacio restante */
+        width: auto;            /* Ancho flexible */
+        align-items: flex-start; /* Alinear texto a la izquierda */
+        text-align: left;
+    }
+
+    /* Tamaños de fuente para desktop */
+    .menu-item-title { font-size: 1.05rem; font-weight: 600; }
+    .menu-item-price { font-size: 1.05rem; font-weight: bold; color: #704527; }
+    .menu-item-description { font-size: 0.85rem; line-height: 1.4; font-style: normal; color: #666;}
+
+     /* Ocultar separadores HR en desktop */
+     .menu-item-divider {
+          display: none;
+     }
+}
+
+
+/* --- Media Queries (Estilos Móviles - Sin cambios respecto a la versión anterior) --- */
+@media (max-width: 768px) {
+    .container { padding: 10px; }
+    .main-header { flex-direction: column; align-items: stretch; padding: 15px; }
+    .brand-column { justify-content: center; flex-wrap: wrap; width: 100%; gap: 10px; }
+    .main-header h1 { margin-right: 0; font-size: 1.5rem; text-align: center; flex-grow: 1; min-width: 150px; order: 1; }
+    .logo-container { order: 0; margin-bottom: 0; }
+    .header-info { display: none; }
+    .view-more { display: inline-block; order: 2; margin: 10px auto 0 auto; flex-basis: auto; padding: 6px 12px; }
+    .sticky-nav { padding: 10px 15px; border-radius: 5px; }
+    #searchInput { font-size: 0.9rem; margin-bottom: 10px; }
+    .category-tabs { padding-bottom: 5px; }
+    .tab-button { padding: 7px 12px; font-size: 0.85rem; }
+    .menu-section { padding: 15px; background-color: white; /* Fondo blanco en móvil */ box-shadow: 0 2px 10px rgba(0,0,0,0.1); } /* Sombra en móvil */
+    .menu-category-title { font-size: 1.2rem; margin-bottom: 15px; border-bottom: none; text-decoration: underline; color: #5c3a21;} /* Estilo móvil original */
+
+    /* Layout móvil: Imagen Izquierda, Texto Derecha */
+    .menu-item {
+        display: flex; flex-direction: row; align-items: center;
+        gap: 15px; padding: 12px 0; border-bottom: 1px solid #eee;
+         background-color: transparent; box-shadow: none; border-radius: 0; margin-bottom: 0; /* Resetear estilos de tarjeta */
+    }
+     .menu-section > .menu-item:last-child { border-bottom: none; }
+    .menu-item-image-placeholder { width: 100px; height: 100px; flex-shrink: 0; margin: 0; }
+    .menu-item-content { flex-grow: 1; width: auto; text-align: left; align-items: flex-start; }
+    .menu-item-title { font-size: 0.95rem; }
+    .menu-item-price { font-size: 0.95rem; color: #805435; }
+    .menu-item-description { font-size: 0.8rem; line-height: 1.4; font-style: normal;}
+
+    .modal-content { width: 95%; max-height: 85vh; }
+    .modal-image-container { max-height: 45vh; }
+    .modal-details { padding: 15px; max-height: calc(85vh - 45vh - 30px); }
+    .modal-title { font-size: 1.3rem; }
+    .modal-description { font-size: 0.9rem; }
+    .modal-price { font-size: 1.1rem; }
+    .close-modal { top: 10px; right: 10px; width: 30px; height: 30px; font-size: 20px; line-height: 30px; }
+     /* Ocultar separador HR en móvil también si no se usa */
+     .menu-item-divider { display: none; }
+}
+
+/* Móviles Muy Pequeños */
+@media (max-width: 480px) {
+    .main-header h1 { font-size: 1.3rem; }
+    .logo-container { width: 50px; height: 50px; }
+    .view-more { font-size: 0.8rem; padding: 4px 8px; }
+    #searchInput { padding: 8px 12px; }
+    .tab-button { padding: 6px 10px; font-size: 0.8rem; }
+    .menu-item { gap: 10px; }
+    .menu-item-image-placeholder { width: 80px; height: 80px; }
+    .menu-item-title { font-size: 0.9rem; }
+    .menu-item-price { font-size: 0.9rem; }
+    .menu-item-description { font-size: 0.75rem; }
+}
+
+/* --- Estilos Botón Volver Arriba --- */
+.back-to-top {
+    position: fixed;         /* Se queda fijo en la pantalla */
+    bottom: 20px;            /* Distancia desde abajo */
+    right: 20px;             /* Distancia desde la derecha */
+    z-index: 1050;           /* Encima de la mayoría del contenido (ajusta si es necesario) */
+
+    background-color: #5c3a21; /* Color principal del tema */
+    color: white;            /* Color del icono */
+    border: none;            /* Sin borde */
+    border-radius: 50%;      /* Botón circular */
+    width: 45px;             /* Ancho del botón (pequeño) */
+    height: 45px;            /* Alto del botón */
+    font-size: 18px;         /* Tamaño del icono */
+
+    display: flex;           /* Para centrar el icono */
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;   /* Quitar subrayado del enlace */
+    cursor: pointer;
+
+    /* Estado inicial oculto y transición */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px); /* Efecto sutil de aparición */
+    transition: background-color 0.3s ease, opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+}
+
+.back-to-top:hover {
+    background-color: #d4a762; /* Color hover (como tabs activas) */
+    color: white;
+}
+
+/* Clase para mostrar el botón (se añade/quita con JS) */
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
